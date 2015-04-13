@@ -332,7 +332,7 @@ var MapsLib = {
     // select specific columns from the fusion table to display in th list
     // NOTE: we'll be referencing these by their index (0 = School, 1 = GradeLevels, etc), so order matters!
     //var selectColumns = "School, GradeLevels, Address, City, State, Url, Manager, Gain_numeric, Gain_image";
-    var selectColumns = "wagon, speed, sattelites";
+    var selectColumns = "wagon, speed, sattelites, temperature_inside, temperature_outside";
     MapsLib.query(selectColumns, whereClause,"", "", 500, "MapsLib.displayList");
   },
 
@@ -356,11 +356,11 @@ var MapsLib = {
       <table class='table' id ='list_table'>\
         <thead>\
           <tr>\
-            <th>School</th>\
-            <th>Grades&nbsp;&nbsp;</th>\
-            <th>Address</th>\
-            <th>Manager</th>\
-            <th>Gain</th>\
+            <th>Wagon</th>\
+            <th>Speed</th>\
+            <th>Sats</th>\
+            <th>Temp inr</th>\
+            <th>Temp out</th>\
           </tr>\
         </thead>\
         <tbody>";
