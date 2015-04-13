@@ -383,11 +383,11 @@ var MapsLib = {
 
         list_table += "\
           <tr>\
-            <td>" + school + "</td>\
+            <td>" + rows[row][0] + "</td>\
             <td>" + rows[row][1] + "</td>\
-            <td>" + address + "</td>\
-            <td>" + rows[row][6] + "</td>\
-            <td><span data-value='" + rows[row][7] + "'><img src='" + rows[row][8] + "' /></span></td>\
+            <td>" + rows[row][2] + "</td>\
+            <td>" + rows[row][3] + "</td>\
+            <td>" + rows[row][4] + "</td>\
           </tr>";
       }
 
