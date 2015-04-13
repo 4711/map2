@@ -1,3 +1,6 @@
+http://4711.github.io/map2
+
+
 FusionTable-Map-2-layers
 ========================
 
