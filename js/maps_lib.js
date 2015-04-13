@@ -27,7 +27,7 @@ var MapsLib = {
   //MODIFY the encrypted Table IDs of your Fusion Tables (found under File => About)
   //NOTE: numeric IDs will be depricated soon
   //fusionTableId:      "1WoxNIvjGQzQAk7B965hwVQOIl04f-Xn09JuTLu03", //Point data layer
-  fusionTableId:      "1O8c9L00u3nLpiJC27eiDsoQNrtXZxR94G_oAGoQw  ", //Point data layer
+  fusionTableId:      "1O8c9L00u3nLpiJC27eiDsoQNrtXZxR94G_oAGoQw", //Point data layer
 
   //polygon1TableID:    "1ceippR4giBiF-pT9PE1YAUvebFp6_NKvYriccYo", //Outline map layer of CT town boundaries
   polygon1TableID:    "1ULgoU8fuIIBSj8pPdASjoONN9eqfKbnnuqyifJiR", //Outline map layer of CT town boundaries
