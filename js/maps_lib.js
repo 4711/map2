@@ -47,7 +47,7 @@ var MapsLib = {
   locationColumn:     "geometry",
 
   map_centroid:       new google.maps.LatLng(46.7, 8.0), //center that your map defaults to
-  locationScope:      "connecticut",      //geographical area appended to all address searches
+  locationScope:      "switzerland",      //geographical area appended to all address searches
   recordName:         "result",       //for showing number of results
   recordNamePlural:   "results",
 
