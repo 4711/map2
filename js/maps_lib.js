@@ -292,7 +292,7 @@ var MapsLib = {
       queryStr.push(" LIMIT " + limit);
 
     var sql = encodeURIComponent(queryStr.join(" "));
-    // console.log(sql)
+    console.log(sql)
     $.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
   },
 
@@ -310,6 +310,7 @@ var MapsLib = {
 
   getCount: function(whereClause) {
     var selectColumns = "Count()";
+    console.log(whereClause)
     MapsLib.query(selectColumns, whereClause,"", "", "", "MapsLib.displaySearchCount");
   },
 
