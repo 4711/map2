@@ -145,10 +145,8 @@ var MapsLib = {
     var type_column = "'speed'";  // -- note use of single & double quotes for two-word column header
     var tempWhereClause = [];
     if ( $("#cbType1").is(':checked')) whereClause += " AND speed > 0 "
-    if ( $("#cbType1").is(':checked')) tempWhereClause.push("Interdistrict");
-    if ( $("#cbType2").is(':checked')) tempWhereClause.push("District");
-    if ( $("#cbType3").is(':checked')) tempWhereClause.push("MorePreK");
-    //whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
+    if ( $("#cbType2").is(':checked')) whereClause += " AND speed > 50 "
+    if ( $("#cbType3").is(':checked')) whereClause += " AND speed > 80 "
 
     //-- NUMERICAL OPTION - to display and filter a column of numerical data in your table, use this instead
     /*    var type_column = "'TypeNum'";
