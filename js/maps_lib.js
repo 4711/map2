@@ -128,9 +128,6 @@ var MapsLib = {
             $("#speed-selected-start").html(ui.values[0]);
             $("#speed-selected-end").html(ui.values[1]);
         },
-      //  change: function(event, ui) {
-      //    MapsLib.doSearch();
-        //},
         stop: function(event, ui) {
           MapsLib.doSearch();
         }
