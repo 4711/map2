@@ -144,9 +144,9 @@ var MapsLib = {
     //-- TEXTUAL OPTION to display legend and filter by non-numerical data in your table
     var type_column = "'speed'";  // -- note use of single & double quotes for two-word column header
     var tempWhereClause = [];
-    if ( $("#cbType1").is(':checked')) whereClause += " AND speed = 0 "
-    if ( $("#cbType2").is(':checked')) whereClause += " AND speed > 50 "
     if ( $("#cbType3").is(':checked')) whereClause += " AND speed > 80 "
+    else if ( $("#cbType2").is(':checked')) whereClause += " AND speed > 50 "
+    else if ( $("#cbType1").is(':checked')) whereClause += " AND speed = 0 "
 
     //-- NUMERICAL OPTION - to display and filter a column of numerical data in your table, use this instead
     /*    var type_column = "'TypeNum'";
