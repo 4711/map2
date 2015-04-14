@@ -129,7 +129,7 @@ var MapsLib = {
             $("#speed-selected-end").html(ui.values[1]);
         },
         stop: function(event, ui) {
-          self.doSearch();
+          MapsLib.doSearch();
         }
     });    
     
