@@ -127,9 +127,11 @@ var MapsLib = {
         slide: function (event, ui) {
             $("#speed-selected-start").html(ui.values[0]);
             $("#speed-selected-end").html(ui.values[1]);
-            MapsLib.doSearch();
         },
         stop: function(event, ui) {
+          MapsLib.doSearch();
+        }
+        change: function(event, ui) {
           MapsLib.doSearch();
         }
     });    
