@@ -123,7 +123,7 @@ var MapsLib = {
         min: 0,
         max: 120,
         values: [0, 120],
-        step: 10,
+        step: 5,
         slide: function (event, ui) {
             $("#speed-selected-start").html(ui.values[0]);
             $("#speed-selected-end").html(ui.values[1]);
