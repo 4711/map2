@@ -130,7 +130,7 @@ var MapsLib = {
         },
         stop: function(event, ui) {
           MapsLib.doSearch();
-        }
+        },
         change: function(event, ui) {
           MapsLib.doSearch();
         }
