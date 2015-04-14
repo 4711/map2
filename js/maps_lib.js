@@ -292,7 +292,7 @@ var MapsLib = {
       queryStr.push(" LIMIT " + limit);
 
     var sql = encodeURIComponent(queryStr.join(" "));
-    console.log("query: " + convertToPlainString(sql))
+    console.log("query: " + sql)
     $.ajax({url: "https://www.googleapis.com/fusiontables/v1/query?sql="+sql+"&callback="+callback+"&key="+MapsLib.googleApiKey, dataType: "jsonp"});
   },
 
