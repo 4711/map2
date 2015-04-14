@@ -117,6 +117,23 @@ var MapsLib = {
     
     $("#rbPolygon1").attr("checked", "checked"); 
     
+    $("#speed-slider").slider({
+        orientation: "horizontal",
+        range: true,
+        min: 0,
+        max: 120,
+        values: [0, 120],
+        step: 10,
+        slide: function (event, ui) {
+            $("#speed-selected-start").html(ui.values[0]);
+            $("#speed-selected-end").html(ui.values[1]);
+        },
+        stop: function(event, ui) {
+          self.doSearch();
+        }
+    });    
+    
+    
     //-----end of custom initializers-------
 
     //run the default search
